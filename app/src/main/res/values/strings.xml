@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Latihan sidik</string>
+    <string-array name="prodi">
+        <item>Management Informatika</item>
+        <item>Administrasi Bisnis</item>
+        <item>Komputer Akuntansi</item>
+        <item>Informatika Komputer</item>
+        <item>Teknik Komputer</item>
+        <item>Sekretaris</item>
+        <item>Multimedia</item>
+    </string-array>
+</resources>

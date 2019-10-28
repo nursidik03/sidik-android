@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ad.sidik.trialapp.MainActivity"
+    android:id="@+id/main_layout_id"
+    android:padding="16dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrasi"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"
+                android:layout_marginTop="28dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Namamu"
+                android:id="@+id/et_nama"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat / Domisili" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sesuai KTP"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:gravity="top|left"
+                android:id="@+id/et_alamat"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Program Studi"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_prodi"
+                android:entries="@array/prodi"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lulusan" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rg_lulusan">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SMA"
+                    android:id="@+id/rb_SMA"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SMK"
+                    android:id="@+id/rb_SMK"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aliyah"
+                    android:id="@+id/rb_MA"/>
+            </RadioGroup>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/cb_valid"
+                android:text="Data Ini Valid"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Simpan"
+                    android:id="@+id/bt_simpan"
+                    android:drawableLeft="@drawable/ic_check_circle_outline"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:background="#FF0000"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hapus"
+                    android:id="@+id/bt_hapus"
+                    android:drawableLeft="@drawable/ic_delete"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:background="#FFFF00"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Toast"
+                    android:id="@+id/bt_toast"
+                    android:layout_weight="1"
+                    android:background="#00FF00"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notifikasi"
+                    android:id="@+id/bt_notifikasi"
+                    android:layout_weight="1"
+                    android:background="#00FFFF"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="snackbar"
+                    android:id="@+id/bt_snackbar"
+                    android:layout_weight="1"
+                    android:background="#FFFF00"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="exit"
+                    android:id="@+id/bt_exit"
+                    android:layout_weight="1"
+                    android:background="#00FF00"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
